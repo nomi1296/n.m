@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="vPostsiewport" content="width=device-width,initial-scale=1" />
+
+  <!-- google site verification -->
+<meta name="google-site-verification" content="djjlsmPLx4Dsgh_GunM3sPqlOQdeU2IiXPN7lIH3gPU" />
+  <title>My real blogs </title>
+  <link rel="icon" href="b.png.png" type="image/png">
+
+  <meta name="author" content="Noman ">
+  <meta name="description" content="Single-file fancy blog with 50 sample posts" />
+
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#ffffff; --muted:#6b7280; --accent:#ff6b6b;
+      --radius:12px; --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background:var(--bg); color:#111; -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:var(--maxw); margin:28px auto; padding:0 18px}
+    header.site{
+      background:linear-gradient(135deg,var(--accent),#ffb347);
+      color:white; padding:24px; border-radius:14px;
+      display:flex; justify-content:space-between; align-items:center; gap:18px;
+      flex-wrap:wrap;
+    }
+    .brand h1{margin:0;font-size:20px}
+    .brand p{margin:0;font-size:13px;opacity:.95}
+    nav.top a{
+      color:white; text-decoration:none; margin:0 10px; font-weight:600;
+      background: rgba(255,255,255,0.08); padding:8px 12px; border-radius:8px;
+    }
+    nav.top a:hover{background:rgba(255,255,255,0.15)}
+    .grid{display:grid; grid-template-columns: 1fr 320px; gap:22px; margin-top:18px}
+    main{background:transparent}
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      padding:18px; border-radius:12px; margin-bottom:16px;
+    }
+    .posts{display:grid; grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); gap:16px}
+    .post{
+      background:var(--card); border-radius:var(--radius); overflow:hidden;
+      box-shadow: 0 6px 18px rgba(20,20,40,0.06); display:flex; flex-direction:column;
+    }
+    .thumb{height:150px; background-size:cover; background-position:center}
+    .post-body{padding:12px; display:flex; flex-direction:column; gap:8px; flex:1}
+    .post .meta{font-size:12px;color:var(--muted)}
+    .post .title{font-weight:700;color:#111;font-size:15px}
+    .post .excerpt{font-size:14px;color:var(--muted); flex:1}
+    .readmore{margin-top:8px; font-size:13px; color:var(--accent); text-decoration:none; font-weight:600}
+    aside.sidebar{
+      background:var(--card); padding:14px; border-radius:12px; height:fit-content;
+      box-shadow: 0 6px 18px rgba(20,20,40,0.04);
+    }
+    .widget{margin-bottom:14px}
+    .widget h4{margin:0 0 8px 0}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    footer{margin-top:22px; text-align:center; color:var(--muted); font-size:13px}
+    .category-title{margin:18px 0 8px 0; display:flex; justify-content:space-between; align-items:center}
+    /* responsive */
+    @media (max-width:980px){ .grid{grid-template-columns:1fr} .hero{padding:14px} .thumb{height:180px} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <div class="brand">
+        <h1>My Fancy Blog</h1>
+        <p>Stories • Tips • Travel • Food</p>
+      </div>
+      <nav class="top" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#tech">Technology</a>
+        <a href="#travel">Travel</a>
+        <a href="#food">Food & Lifestyle</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="hero">
+          <h2 style="margin:0 0 6px 0">Welcome — A single-file fancy blog</h2>
+          <p style="margin:0;color:var(--muted)">Below are 50 sample posts. Click navigation to jump to category sections.</p>
+        </section>
+
+        <!-- HOME (10 posts) -->
+        <section id="home">
+          <div class="category-title"><h3>Home — Latest Posts</h3><span class="muted">10 posts</span></div>
+          <div class="posts">
+            <!-- 1 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p1/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jan 2 · 4 min · General</div>
+                <div class="title">How I Start My Day: A Simple Routine</div>
+                <div class="excerpt">A short routine that helps me focus — coffee, quick notes and 30 min reading to set the tone.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p2/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Feb 8 · 6 min · Life</div>
+                <div class="title">5 Minimal Habits That Changed My Workflow</div>
+                <div class="excerpt">Minimal changes with big wins — time blocking, email windows and single-task focus explained.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p3/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Mar 12 · 3 min · Notes</div>
+                <div class="title">My Favorite Productivity Tools (2025)</div>
+                <div class="excerpt">A brief list of tools I use daily for notes, distraction-free writing and quick captures.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p4/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Apr 1 · 5 min · Thoughts</div>
+                <div class="title">Why Small Projects Matter</div>
+                <div class="excerpt">Small projects let you experiment, iterate and ship fast — why they are more valuable than you think.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p5/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">May 20 · 7 min · Guide</div>
+                <div class="title">A Quick Guide to Writing Better Headlines</div>
+                <div class="excerpt">Headlines are doors — small tweaks can improve reads. Use numbers, promise value and be specific.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p6/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jun 2 · 4 min · Tools</div>
+                <div class="title">Note-taking systems I Tried (and Kept)</div>
+                <div class="excerpt">From plain folders to Zettelkasten — what worked and what I dropped after weeks of use.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p7/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jul 9 · 4 min · Personal</div>
+                <div class="title">How I Beat Writer's Block in 3 Steps</div>
+                <div class="excerpt">A practical sequence: free-writing, micro-prompts and short walks to clear the head.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 8 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p8/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Aug 14 · 6 min · Design</div>
+                <div class="title">Design Choices That Make Content Easier to Scan</div>
+                <div class="excerpt">Spacing, contrast and clear headings: small visual rules that improve reading speed and comfort.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 9 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p9/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Sep 3 · 5 min · Life</div>
+                <div class="title">Digital Declutter: My 30-day Challenge</div>
+                <div class="excerpt">I removed 6 apps and reorganized folders — here are the surprisingly small changes that mattered.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+
+            <!-- 10 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p10/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Oct 21 · 8 min · Guide</div>
+                <div class="title">Publishing Workflow: Draft → Edit → Ship</div>
+                <div class="excerpt">A simple three-step workflow to keep momentum without sacrificing quality — templates included.</div>
+                <a class="readmore" href="#home">Read</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- TECHNOLOGY (10 posts) -->
+        <section id="tech">
+          <div class="category-title"><h3>Technology</h3><span class="muted">10 posts</span></div>
+          <div class="posts">
+            <!-- 11 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p11/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jan 5 · 7 min · Tech</div>
+                <div class="title">Tiny JavaScript Tricks That Save Time</div>
+                <div class="excerpt">Short snippets to manipulate arrays, shorten conditionals and speed up tests — copy-paste friendly.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 12 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p12/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Feb 11 · 6 min · Dev</div>
+                <div class="title">My Local Dev Setup in 2025</div>
+                <div class="excerpt">Terminal tips, simple aliases and a lean toolset that keeps me shipping quickly without overload.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 13 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p13/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Mar 8 · 9 min · AI</div>
+                <div class="title">Practical Ways to Use AI in Small Projects</div>
+                <div class="excerpt">How to add small AI features — summarization, simple recommendations and smart search with little effort.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 14 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p14/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Apr 16 · 5 min · Tips</div>
+                <div class="title">Keeping Dependencies Small and Safe</div>
+                <div class="excerpt">A checklist before adding a new package: size, maintenance, alternatives, and license considerations.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 15 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p15/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">May 2 · 4 min · Web</div>
+                <div class="title">CSS Tips for Cleaner Layouts</div>
+                <div class="excerpt">Using css grid and flexbox together for approachable, robust layouts that adapt nicely on mobile.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 16 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p16/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jun 7 · 8 min · Systems</div>
+                <div class="title">Backups: Simple Approach That Works</div>
+                <div class="excerpt">Automation basics for backups, rotation and quick restores — practical steps for non-experts.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 17 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p17/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jul 1 · 6 min · Dev</div>
+                <div class="title">Testing Without Tears: Keep Tests Useful</div>
+                <div class="excerpt">Focus on examples, boundaries and a small set of fast unit tests — avoid brittle end-to-end sprawl.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 18 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p18/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Aug 19 · 7 min · Tools</div>
+                <div class="title">Command Line Tricks for Faster Work</div>
+                <div class="excerpt">Small shortcuts and one-liners that save time — combining pipes, find, and xargs for quick tasks.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 19 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p19/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Sep 12 · 10 min · AI</div>
+                <div class="title">Prompt Design Basics for Useful Outputs</div>
+                <div class="excerpt">Short guidelines to craft prompts that return actionable, reliable results without noise.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+
+            <!-- 20 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p20/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Oct 30 · 5 min · Trends</div>
+                <div class="title">Web Performance: Perceived Speed Tricks</div>
+                <div class="excerpt">Perceived speed beats raw metrics sometimes — skeleton UI, prioritizing hero content and caching tips.</div>
+                <a class="readmore" href="#tech">Read</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- TRAVEL (10 posts) -->
+        <section id="travel">
+          <div class="category-title"><h3>Travel</h3><span class="muted">10 posts</span></div>
+          <div class="posts">
+            <!-- 21 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p21/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jan 18 · 6 min · Travel</div>
+                <div class="title">A Weekend in the Hills — Practical Tips</div>
+                <div class="excerpt">Packing light, where to stay, and how to find quiet viewpoints off the beaten path.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 22 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p22/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Feb 2 · 5 min · Travel</div>
+                <div class="title">Cheap Flight Hacks That Actually Work</div>
+                <div class="excerpt">Timing, small airports, and flexible dates — a modest strategy to cut costs without stress.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 23 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p23/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Mar 4 · 7 min · Guide</div>
+                <div class="title">How to Photograph Landscapes with Any Phone</div>
+                <div class="excerpt">Simple composition rules and small adjustments that yield better travel photos on the go.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 24 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p24/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Apr 27 · 6 min · Story</div>
+                <div class="title">Train Journeys That Feel Slow and Good</div>
+                <div class="excerpt">Why slow travel can be restorative — notes from a week spent on rails and small stations.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 25 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p25/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">May 30 · 8 min · Tips</div>
+                <div class="title">Staying Healthy While Traveling Long-Term</div>
+                <div class="excerpt">Small routines and food choices that kept energy up during extended trips and remote work stays.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 26 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p26/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jun 14 · 5 min · Guide</div>
+                <div class="title">City Walks: How to Find Good Neighborhoods</div>
+                <div class="excerpt">Look for small cafes, local markets and relaxed foot traffic — signs of a neighborhood worth exploring.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 27 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p27/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jul 20 · 4 min · Story</div>
+                <div class="title">A Quiet Beach, No Crowds: Where and How</div>
+                <div class="excerpt">Season tips and local knowledge that help you find calm beaches even in the tourist season.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 28 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p28/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Aug 9 · 6 min · Gear</div>
+                <div class="title">Lightweight Gear for 2-Week Trips</div>
+                <div class="excerpt">Checklist for a two-week trip with only a carry-on — clothes, chargers and versatile items.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 29 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p29/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Sep 22 · 5 min · Story</div>
+                <div class="title">Local Food Markets I Loved</div>
+                <div class="excerpt">Markets are places to discover local life — some recommended stalls and what to try.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+
+            <!-- 30 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p30/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Oct 6 · 7 min · Advice</div>
+                <div class="title">Travel With Purpose: Volunteering & Local Projects</div>
+                <div class="excerpt">How to find small projects that welcome short-term help and actually benefit the community.</div>
+                <a class="readmore" href="#travel">Read</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- FOOD & LIFESTYLE (20 posts) -->
+        <section id="food">
+          <div class="category-title"><h3>Food & Lifestyle</h3><span class="muted">20 posts</span></div>
+          <div class="posts">
+            <!-- 31 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p31/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jan 3 · 5 min · Food</div>
+                <div class="title">5 Simple Breakfasts to Start Right</div>
+                <div class="excerpt">Quick breakfasts that are filling, healthy and easy to prepare — recipes included.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 32 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p32/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jan 15 · 4 min · Lifestyle</div>
+                <div class="title">A Simple Evening Routine for Better Sleep</div>
+                <div class="excerpt">Rituals that help wind down: dim lights, short reading and avoiding screens before bed.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 33 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p33/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Feb 4 · 6 min · Food</div>
+                <div class="title">Quick One-Pot Recipes for Busy Days</div>
+                <div class="excerpt">Flavorful, low-cleanup dinners you can make in 30 minutes — ideal for weeknights.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 34 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p34/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Mar 11 · 5 min · Health</div>
+                <div class="title">Small Exercises You Can Do at Home</div>
+                <div class="excerpt">Short routines to stay active when you work from a desk — 10-minute moves to try today.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 35 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p35/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Apr 2 · 7 min · Food</div>
+                <div class="title">How to Make a Reliable Tomato Sauce</div>
+                <div class="excerpt">A base tomato sauce that's forgiving and tasty — useful for pasta, shakshuka and more.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 36 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p36/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Apr 18 · 5 min · Lifestyle</div>
+                <div class="title">Declutter: A 20-Item Challenge</div>
+                <div class="excerpt">Daily small decisions to reduce clutter — five items a day and you’ll notice the space change.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 37 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p37/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">May 6 · 6 min · Food</div>
+                <div class="title">Baking Bread at Home: A Beginner's Guide</div>
+                <div class="excerpt">Simple dough, patient proving and a hot oven — you can do this without special tools.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 38 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p38/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jun 21 · 5 min · Lifestyle</div>
+                <div class="title">Weekend Reset: Simple Steps for Monday</div>
+                <div class="excerpt">A checklist to prep for the week — laundry, list of priorities, and light planning for ease.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 39 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p39/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Jul 30 · 4 min · Food</div>
+                <div class="title">Salad Bowls That Actually Fill You Up</div>
+                <div class="excerpt">Protein, grains and texture — building a satisfying bowl does not have to be boring.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 40 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p40/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Aug 15 · 6 min · Food</div>
+                <div class="title">Comfort Foods with a Healthy Twist</div>
+                <div class="excerpt">Swap a few ingredients to keep the taste while improving fiber and nutrients.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 41 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p41/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Sep 2 · 5 min · Lifestyle</div>
+                <div class="title">Creating a Simple Home Workspace</div>
+                <div class="excerpt">Lighting, posture and a minimal kit that helps stay productive without clutter.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 42 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p42/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Sep 18 · 7 min · Food</div>
+                <div class="title">Meal Prep Ideas for Busy Weeks</div>
+                <div class="excerpt">Three easy templates to rotate so lunch and dinner are solved with minimal fuss.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 43 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p43/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Oct 4 · 4 min · Tips</div>
+                <div class="title">Tea Rituals from Different Countries</div>
+                <div class="excerpt">Short notes on tea habits that are calming, social and surprisingly different across cultures.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 44 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p44/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Oct 19 · 6 min · Food</div>
+                <div class="title">Simple Sweets You Can Bake Without Sugar</div>
+                <div class="excerpt">Using fruit and swaps to make treats that are satisfying but lighter on refined sugar.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 45 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p45/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Nov 7 · 5 min · Lifestyle</div>
+                <div class="title">A Tiny Garden on a Small Balcony</div>
+                <div class="excerpt">Plant choices, pots and quick tips to grow herbs and small veggies in tight spaces.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 46 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p46/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Nov 22 · 4 min · Food</div>
+                <div class="title">Leftovers Reinvented: New Meals From Last Night</div>
+                <div class="excerpt">Ideas to turn dinner leftovers into fresh lunches that feel intentional and tasty.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 47 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p47/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Dec 1 · 6 min · Food</div>
+                <div class="title">Comfort Bowls for Cold Days</div>
+                <div class="excerpt">Warm grains, roasted veg and bright toppings — ideas for bowls to feel cozy in winter.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 48 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p48/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Dec 12 · 5 min · Lifestyle</div>
+                <div class="title">Hosting Small Gatherings: A Checklist</div>
+                <div class="excerpt">Simple planning notes that keep hosting calm: timeline, menu, and quick decor ideas.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 49 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p49/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Dec 20 · 5 min · Food</div>
+                <div class="title">Holiday Cookies: A Simple Batch Recipe</div>
+                <div class="excerpt">A versatile cookie base you can flavor to make different holiday variations with minimal fuss.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+
+            <!-- 50 -->
+            <article class="post">
+              <div class="thumb" style="background-image:url('https://picsum.photos/seed/p50/900/450')"></div>
+              <div class="post-body">
+                <div class="meta">Dec 28 · 7 min · Lifestyle</div>
+                <div class="title">Reflecting on the Year: Small Wins to Celebrate</div>
+                <div class="excerpt">A short reflection list to remember progress — not only big wins but small consistent steps.</div>
+                <a class="readmore" href="#food">Read</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="widget">
+          <h4>About the Author</h4>
+          <p style="margin:0;color:var(--muted)">Hi — I'm Noman. I write short posts about productivity, travel and simple recipes. This is a demo single-file blog with 50 posts.</p>
+        </div>
+
+        <div class="widget">
+          <h4>Categories</h4>
+          <div class="tags">
+            <a class="tag" href="#home">Home</a>
+            <a class="tag" href="#tech">Technology</a>
+            <a class="tag" href="#travel">Travel</a>
+            <a class="tag" href="#food">Food</a>
+          </div>
+        </div>
+
+        <div class="widget">
+          <h4>Search (browser find)</h4>
+          <p style="margin:0;color:var(--muted);font-size:13px">Use your browser's find (Ctrl/Cmd+F) to search titles or words quickly.</p>
+        </div>
+
+        <div class="widget">
+          <h4>Contact</h4>
+          <p style="margin:0;color:var(--muted);font-size:13px">Email: <strong>nomanhanjra333@.com</strong></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="yr"></span> My Fancy Blog • All posts are samples — replace with your real content.
+    </footer>
+  </div>
+
+  <script>
+    // small enhancement: set year (non-essential, safe)
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
